@@ -46,4 +46,42 @@
 
 
 /* media query for mobile */
-@media screen and (max-width: 688px) {}
+@media screen and (max-width: 688px) {
+    .nav-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-left: -20px;
+    }
+
+    .nav-main .nav-logo img {
+        width: 50%;
+        margin-left: 22px;
+    }
+
+    .nav-main .nav-menu ul {
+        display: flex;
+        flex-direction: column;
+        background-color: gray;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-main .nav-menu ul li {
+        list-style: none;
+        margin-right: 30px;
+        margin-top: 20px;
+    }
+
+    .nav-main .nav-menu #cart-icon {
+        position: absolute;
+        top: 18px;
+        left: 135px;
+        border: none;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+    }
+}

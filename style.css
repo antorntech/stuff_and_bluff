@@ -372,6 +372,31 @@ footer {
         margin-bottom: 100px;
     }
 
+    .hero-main {
+        align-items: center;
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .hero-left {
+        padding: 20px 20px;
+        margin-bottom: 20px;
+    }
+
+    .hero-main .hero-left h1 {
+        font-size: 25px;
+    }
+
+    .hero-right {
+        padding: 20px 0px;
+    }
+
+    .hero-main .hero-right img {
+        width: 70%;
+        float: none;
+        margin-left: 50px;
+    }
+
     .catagories {
         flex-direction: column;
     }
