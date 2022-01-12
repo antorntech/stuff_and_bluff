@@ -274,6 +274,7 @@ main {
 
 .brands-image img {
     transition: .5s;
+    filter: grayscale(100%);
 }
 
 .brands-image img:hover {
@@ -325,6 +326,7 @@ footer {
 }
 
 .footer-details ul li a:hover {
+    cursor: pointer;
     color: rgb(255, 10, 10);
 }
 
@@ -337,10 +339,10 @@ footer {
     font-size: 25px;
     padding: 10px 10px;
     transition: .5s;
-    cursor: pointer;
 }
 
 .footer-details i:hover {
+    cursor: pointer;
     color: rgb(255, 10, 10);
 }
 
@@ -363,5 +365,79 @@ footer {
 
 
 
-/* media queries */
-@media screen and (max-width: 688px) {}
+/* media queries for mobile */
+@media screen and (max-width: 688px) {
+    .container {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    .catagories {
+        flex-direction: column;
+    }
+
+    .products-main {
+        display: grid;
+        grid-row-gap: 50px;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0px 20px;
+        margin-top: 50px;
+    }
+
+    .featured-products {
+        padding: 0 20px;
+        box-shadow: 5px 5px 15px gray;
+    }
+
+    .latest-products-main {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 50px;
+        padding: 0px 20px;
+    }
+
+    .offer-main {
+        padding: 0px 50px;
+        flex-direction: column;
+    }
+
+    .offer-image img {
+        left: 0;
+    }
+
+    .offer-details {
+        top: 50px;
+        left: 0;
+    }
+
+    .testimonial-main {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 30px;
+        padding: 0px 20px;
+        margin-top: 50px;
+    }
+
+    .brands-main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+
+    .brands-image img {
+        transition: .5s;
+        width: 95%;
+        filter: grayscale(100%);
+    }
+
+    .footer-main {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .footer-details {
+        padding: 10px 65px;
+    }
+}

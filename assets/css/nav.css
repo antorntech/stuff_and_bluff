@@ -13,7 +13,7 @@
 
 .nav-main .nav-menu ul {
     display: flex;
-    margin-right: 20px;
+    margin-right: 80px;
 }
 
 .nav-main .nav-menu ul li {
@@ -37,9 +37,13 @@
 
 .nav-main .nav-menu #cart-icon {
     position: absolute;
+    margin-top: -8px;
     border: none;
-    font-size: 30px;
-    margin-top: -15px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {}
+
+/* media query for mobile */
+@media screen and (max-width: 688px) {}
