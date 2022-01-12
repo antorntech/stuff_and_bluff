@@ -1,0 +1,45 @@
+/* -------------nav-bar---------------- */
+.nav-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1210px;
+    margin-left: 100px;
+}
+
+.nav-main .nav-logo img {
+    width: 50%;
+}
+
+.nav-main .nav-menu ul {
+    display: flex;
+    margin-right: 20px;
+}
+
+.nav-main .nav-menu ul li {
+    list-style: none;
+    margin-right: 10px;
+}
+
+.nav-main .nav-menu ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 5px;
+    transition: .2s;
+    border: 2px solid transparent;
+
+}
+
+.nav-main .nav-menu ul li a:hover {
+    color: rgb(255, 10, 10);
+    border-bottom: 2px solid rgb(255, 10, 10);
+}
+
+.nav-main .nav-menu #cart-icon {
+    position: absolute;
+    border: none;
+    font-size: 30px;
+    margin-top: -15px;
+}
+
+@media screen and (max-width: 600px) {}
