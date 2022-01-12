@@ -225,13 +225,13 @@ main {
 .testimonial-main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
     padding: 0px 50px;
     margin-top: 100px;
 }
 
 .testimonial-details {
     text-align: center;
-    margin: 0 20px;
     transition: .5s;
 }
 
@@ -260,7 +260,103 @@ main {
     font-size: 25px;
 }
 
+/* brands section */
+.brands-main {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 20px;
+    padding: 0 50px;
+}
 
+.brands-image {
+    text-align: center;
+}
+
+.brands-image img {
+    transition: .5s;
+}
+
+.brands-image img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* footer section */
+footer {
+    background-color: black;
+    width: 100%;
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    margin-left: 65px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.footer-main h4 {
+    color: white;
+    font-size: 20px;
+}
+
+.footer-main p {
+    color: gray;
+}
+
+.footer-details a img {
+    width: 40%;
+}
+
+.footer-details ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-details ul li {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.footer-details ul li a {
+    color: gray;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.footer-details ul li a:hover {
+    color: rgb(255, 10, 10);
+}
+
+#white-text {
+    text-align: center;
+}
+
+.footer-details i {
+    color: gray;
+    font-size: 25px;
+    padding: 10px 10px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.footer-details i:hover {
+    color: rgb(255, 10, 10);
+}
+
+.copyright {
+    margin-top: 20px;
+    text-align: center;
+    color: gray;
+}
+
+.copyright p {
+    font-size: 15px;
+}
+
+.copyright span {
+    color: rgb(255, 10, 10);
+}
 
 
 
